@@ -1,0 +1,10 @@
+[Unit]
+Description=Watchdog reset service
+After=homeassistant.service
+
+[Service]
+Type=simple
+ExecStart=/path/to/script/watchdog.sh
+
+[Install]
+WantedBy=default.target
